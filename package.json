@@ -1,0 +1,32 @@
+{
+  "name": "mysquar-api-docs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "npm test",
+    "start": "node --harmony  ./app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/squar/mysquar-api-docs.git"
+  },
+  "keywords": [
+    "api",
+    "docs",
+    "mysquar",
+    "swagger"
+  ],
+  "author": "MySquar",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/squar/mysquar-api-docs/issues"
+  },
+  "homepage": "https://github.com/squar/mysquar-api-docs",
+  "dependencies": {
+    "@slack/events-api": "^1.0.1",
+    "ejs": "^2.5.6",
+    "express": "^4.15.2",
+    "import-export": "^1.0.1"
+  }
+}
