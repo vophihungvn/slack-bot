@@ -8,27 +8,6 @@ const slackEvents = createSlackEventAdapter('ojYIvoykr0dgV2UBtFemIyvZ');
 
 let app = express();
 
-// create a bot 
-var bot = new Bot({
-    token: 'xoxb-154489336386-phY8U8izk5hiRkqeVRSKIkW0',
-    name: 'My Bot'
-});
-
-bot.on('start', () => {
-		console.log('started')
-    // more information about additional params https://api.slack.com/methods/chat.postMessage 
-    var params = {
-        icon_emoji: ':cat:'
-    };
-    
-    // define channel, where bot exist. You can adjust it there https://my.slack.com/services  
-    bot.postMessageToChannel('general', 'meow!', params);
-
-		bot.on('message', (data) => {
-			console.log('mess come ===================')
-			console.log(data)
-		}) 
-});
 
 app.use('/slack/events', slackEvents.expressMiddleware());
 
